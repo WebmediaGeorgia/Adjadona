@@ -1,1 +1,1 @@
-# Adjadona. Fish/meat
+# Adjadona.
