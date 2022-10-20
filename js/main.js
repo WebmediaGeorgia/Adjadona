@@ -1579,19 +1579,6 @@ for (i = 0; i < itemMenuOpen.length; i++) {
   });
 }
 
-let itemSubMenuOpen = document.querySelectorAll(".product__item--subtitle");
-
-for (i = 0; i < itemSubMenuOpen.length; i++) {
-  itemSubMenuOpen[i].addEventListener("click", function (e) {
-    if (e.target.classList.contains("product__item--subtitle")) {
-      e.target.classList.toggle("tab-header__item--active");
-      e.target.nextElementSibling.classList.toggle("show-tabs-menu");
-      e.target.nextElementSibling.classList.toggle("fade");
-      e.target.querySelector("svg").classList.toggle("accordion__header-icon--active");
-    }
-  });
-}
-
 /***/ }),
 
 /***/ "./src/js/functions/burger.js":
