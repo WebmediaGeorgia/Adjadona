@@ -1,0 +1,51 @@
+.show-tabs-menu {
+  display: block !important;
+}
+
+.show-tabs-content {
+  display: grid !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tab-header__item--active {
+  color: var(--red-color) !important;
+  span {
+    color: rgba(0, 0, 0, 0.47);
+  }
+}
+
+.accordion__header-icon--active {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.product__item--subtitle.tab-header__item--active {
+  color: inherit !important;
+}
+
+.dropdown--active {
+  display: block !important;
+}
+
+.product__item-menu,
+.product__item--submenu {
+  display: none;
+}

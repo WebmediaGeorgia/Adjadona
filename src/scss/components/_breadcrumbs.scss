@@ -1,0 +1,44 @@
+.breadcrumbs {
+  padding-top: 7.208vw;
+  &__list {
+    display: flex;
+  }
+
+  &__item-main {
+    position: relative;
+    &:not(:last-child) {
+      padding-right: 1.042vw;
+      margin-right: 1.042vw;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(30%);
+        width: 0.078vw;
+        height: 65%;
+        background-color: #999999;
+        opacity: 0.4;
+      }
+    }
+
+    &:last-child {
+      pointer-events: none;
+    }
+  }
+
+  &__item-back {
+    display: none;
+  }
+
+  &__link {
+    color: #999999;
+    font-weight: 400;
+    font-size: 0.833vw;
+    line-height: 0.989vw;
+  }
+
+  &__link--active {
+    color: var(--gray-color);
+  }
+}

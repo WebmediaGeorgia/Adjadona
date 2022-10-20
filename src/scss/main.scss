@@ -1,0 +1,44 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения мелких компонентов страницы
+@import "./components/choices";
+@import "./components/titles";
+@import "./components/scrollToTop";
+@import "./components/tabs";
+@import "./components/breadcrumbs";
+@import "./components/burger";
+@import "./components/custom-scroll";
+
+// подключения компонентов главной страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/our-products";
+@import "./components/about-company";
+@import "./components/our-offices";
+@import "./components/feedback";
+@import "./components/certificates";
+@import "./components/about-our-product";
+@import "./components/offers";
+@import "./components/footer";
+
+// подключения компонентов страницы продуктов
+@import "./components/products";
+
+// подключения компонентов страницы отдельного продукта
+@import "./components/single-product";
+
+// подключения компонентов страницы about us
+@import "./components/about-hero.scss";
+@import "./components/why-us";
+@import "./components/our-results";
+
+// подключения компонентов страницы контактов
+@import "./components/contacts";
+
+// media запросы
+@import "./components/media";
+@import "./components/media-test";

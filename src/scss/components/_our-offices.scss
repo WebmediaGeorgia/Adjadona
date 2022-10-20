@@ -1,0 +1,142 @@
+.our-offices {
+  position: relative;
+  padding-bottom: 10vw;
+  overflow: hidden;
+
+  .titles {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 7.813vw;
+  }
+
+  &__cards {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    //flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 0vw 0.6vw 2vw;
+
+    &:first-child,
+    &:nth-child(4) {
+      transform: translateY(-4.167vw);
+    }
+  }
+
+  &__subtract {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 32.083vw;
+    z-index: 2;
+  }
+
+  &__sea {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 32.083vw;
+    width: 150%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      animation: sea 15s ease-in-out infinite;
+      animation-direction: alternate;
+    }
+  }
+}
+
+.office-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 16.875vw;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0vw 0.208vw 2.604vw rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.26vw);
+  border-radius: 0.781vw;
+  text-align: center;
+  padding: 2.083vw 1.615vw;
+  &__top {
+    flex: 1 1 auto;
+  }
+
+  &__country {
+    position: absolute;
+    top: -1vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--red-color);
+    color: var(--light-color);
+    font-weight: 700;
+    line-height: 1.771vw;
+    padding: 0.156vw 2.604vw;
+    border-radius: 2.188vw;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.146vw;
+    line-height: 1.771vw;
+    margin-bottom: 0.677vw;
+  }
+
+  &__adress {
+    display: block;
+    font-weight: 400;
+    font-size: 1.042vw;
+    line-height: 1.771vw;
+    margin-bottom: 2.083vw;
+  }
+
+  &__bottom {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1.094vw;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6.458vw;
+      height: 0.052vw;
+      background-color: var(--black-color);
+    }
+  }
+
+  &__phone,
+  &__mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      margin-right: 1vw;
+      width: 1vw;
+      height: 1vw;
+      fill: var(--black-color);
+    }
+    span {
+      font-size: 1.146vw;
+      line-height: 1.354vw;
+    }
+  }
+
+  &__phone {
+    margin-bottom: 0.521vw;
+  }
+}
+
+@keyframes sea {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}

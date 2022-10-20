@@ -1,0 +1,73 @@
+.header {
+  padding: 0.7vw 5.729vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--light-color);
+  border-bottom: 0.051vw solid rgba(31, 30, 30, 0.1);
+  z-index: 100;
+
+  &__feedback {
+    display: none;
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    margin-right: 2.344vw;
+
+    &:last-child {
+      margin-right: 1vw;
+    }
+  }
+
+  &__item-logo {
+    margin: 0 auto;
+    width: 6.875vw;
+    height: 4.375vw;
+  }
+
+  &__item-phone {
+    display: flex;
+    align-items: center;
+    svg {
+      width: 1.3vw;
+      height: 1.3vw;
+      fill: #000;
+      padding-right: 0.417vw;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &__link {
+    font-size: 1.042vw;
+    line-height: 1.224vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--black-color);
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__link-phone {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link-phone--show {
+    display: none !important;
+  }
+}
+
+@include for-desktop {
+  .nav__item:hover svg,
+  .nav__link:hover {
+    color: var(--red-color);
+    fill: var(--red-color);
+  }
+}

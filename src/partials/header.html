@@ -1,0 +1,90 @@
+<header class="header">
+  <button
+    class="burger"
+    aria-label="Открыть меню"
+    aria-expanded="false"
+    data-burger
+  >
+    <span class="burger__line"></span>
+  </button>
+
+  <nav class="nav" data-scroll-header>
+    <ul class="nav__list list-reset" data-menu>
+      <li class="nav__item">
+        <a href="index.html" class="nav__link" data-menu-item>Home</a>
+      </li>
+      <li class="nav__item">
+        <a href="products-page.html" class="nav__link" data-menu-item
+          >Product</a
+        >
+      </li>
+      <li class="nav__item">
+        <a href="about-page.html" class="nav__link" data-menu-item>About us</a>
+      </li>
+      <li class="nav__item-logo">
+        <a
+          href="index.html"
+          class="nav__link nav__link-logo"
+          data-menu-item
+          data-da=".header,1200,1"
+        >
+          <img loading="lazy" src="img/logo.png" class="image" alt="Logo" />
+        </a>
+      </li>
+      <li class="nav__item nav__item-phone">
+        <a
+          href="tel:+4879887312"
+          class="nav__link nav__link-phone"
+          data-menu-item
+          data-da=".header,1200,last"
+        >
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          487-98-873-12
+        </a>
+        <a
+          href="tel:+4879887312"
+          class="nav__link nav__link-phone nav__link-phone--show"
+          data-menu-item
+          data-da=".header,1200,last"
+        >
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="contacts-page.html" class="nav__link">Contacts</a>
+      </li>
+      <li class="nav__item nav__item-lang">
+        <select class="lang">
+          <option>ENG</option>
+          <option>FRA</option>
+        </select>
+      </li>
+
+      <div class="header__feedback">
+        <div class="header__form form">
+          <label class="form__label">
+            <input
+              type="text"
+              name="Имя"
+              class="input-reset form__input form__input--name"
+              placeholder="Your name"
+            />
+          </label>
+          <label class="form__label">
+            <input
+              type="text"
+              name="Имя"
+              class="input-reset form__input form__input--phone"
+              placeholder="Phone number"
+            />
+          </label>
+          <button class="btn-reset btn form__btn">Contact us</button>
+        </div>
+      </div>
+    </ul>
+  </nav>
+</header>

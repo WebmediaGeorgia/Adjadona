@@ -1,0 +1,100 @@
+.about-our-product {
+  margin-bottom: 8.333vw;
+  overflow: hidden;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+    top: -11vw;
+    left: -6vw;
+    width: 13.333vw;
+    height: 7.813vw;
+  }
+
+  .titles {
+    flex-direction: column;
+    .label {
+      transform: translateY(-2vw);
+    }
+  }
+
+  &__item {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 2.302vw;
+    }
+
+    &:nth-child(2n + 1) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__descr {
+    width: 50%;
+    padding-top: 1vw;
+  }
+
+  &__title {
+    font-family: var(--font-family-Book-antiqua);
+    font-weight: 700;
+    font-size: 2.188vw;
+    line-height: 2.604vw;
+    margin-bottom: 1.563vw;
+  }
+
+  &__text {
+    font-size: 1.042vw;
+    line-height: 1.771vw;
+    margin-bottom: 1.563vw;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 1.146vw;
+    line-height: 1.823vw;
+    color: var(--black-color);
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
+    svg {
+      width: 0.7vw;
+      height: 0.7vw;
+      fill: var(--black-color);
+      margin-left: 0.3vw;
+    }
+  }
+
+  @include for-desktop {
+    &__link:hover {
+      color: var(--red-color);
+      svg {
+        fill: var(--red-color);
+      }
+    }
+  }
+  &__image {
+    width: 50%;
+    &--show {
+      display: none;
+    }
+    img {
+      width: 34.948vw;
+      height: 27.5vw;
+      height: 100%;
+      border-radius: 1.042vw;
+    }
+  }
+}
+
+.about-our-product__item:nth-child(2n) .about-our-product__descr {
+  margin-right: 2.501vw;
+}
+
+.about-our-product__item:nth-child(2n + 1) .about-our-product__descr {
+  margin-left: 2.501vw;
+}
