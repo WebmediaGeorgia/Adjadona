@@ -76,9 +76,10 @@
 
   &__link {
     width: 2.865vw;
-    height: 2.865vw;
+    height: 3.865vw;
     border: 0.052vw solid var(--black-color);
     border-radius: 0.417vw;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,5 +114,10 @@
 
   .our-products__item:hover .our-products__img {
     transform: scale(1.3);
+  }
+
+  .our-products__item:hover {
+    overflow: hidden;
+    background-color: #d7e8ef;
   }
 }
