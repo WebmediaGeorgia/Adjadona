@@ -71,7 +71,9 @@ if (sectionProduct) {
 
   function showTabContent(i = 0) {
     tabs[i].classList.add("tab-header__item--active");
+  }
 
+  function showTitleContent(i = 0) {
     categoryTitle.firstChild.textContent = tabs[i].firstChild.textContent;
     categoryTitle.lastElementChild.textContent =
       tabs[i].querySelector("span").textContent;
@@ -80,8 +82,10 @@ if (sectionProduct) {
   hideTabContent();
   if (tabs[hash]) {
     showTabContent(hash);
+    showTitleContent(hash);
   } else {
     showTabContent();
+    showTitleContent();
   }
 
   let btnClear = document.querySelector(".products__btn-clear");
