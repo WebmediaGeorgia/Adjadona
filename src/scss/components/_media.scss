@@ -382,17 +382,37 @@
     }
 
     &__img {
-      width: 100vw;
-      left: 7vw;
-      transform: translateX(-10vw);
+      top: -4vw;
+      right: -37vw !important;
+      width: auto;
+      height: 100%;
+    }
+
+    .products-fish {
+      height: 73vw;
+      top: -11vw;
+      right: -43vw !important;
+      -webkit-transform: rotate(13deg);
+      -ms-transform: rotate(13deg);
+      transform: rotate(13deg);
     }
 
     .products-meat {
-      left: 13vw;
-      img {
-        object-fit: contain;
-        object-position: 13vw 1vw;
-      }
+      top: -2vw;
+      height: 55vw;
+      right: -48vw !important;
+    }
+
+    .products-seafood {
+      top: -11.5vw;
+      height: 80vw;
+      right: -37vw !important;
+    }
+
+    .products-shellfish {
+      top: -0.5vw;
+      height: 57vw;
+      right: -27vw !important;
     }
 
     &__link {
@@ -432,11 +452,17 @@
       &:nth-child(3) {
         grid-area: 3 / 3 / 4 / 4;
         margin-right: -50%;
+        img {
+          object-position: -13vw;
+        }
       }
 
       &:nth-child(4) {
         margin-left: -50%;
         grid-area: 3 / 1 / 4 / 2;
+        img {
+          object-position: -27vw;
+        }
       }
 
       &:nth-child(5) {
@@ -592,9 +618,10 @@
     }
 
     &__fish-start {
-      top: 24vw;
-      left: -37vw;
-      width: 65.104vw;
+      top: 31vw;
+      left: -27vw;
+      width: auto;
+      height: 57vw;
     }
 
     &__boubles {
@@ -612,9 +639,10 @@
     }
 
     &__fish-end {
-      top: 26vw;
-      right: -37vw;
-      width: 80.104vw;
+      top: 27vw;
+      right: -34vw;
+      width: auto;
+      height: 62vw;
     }
 
     .form {
@@ -1811,11 +1839,24 @@
 
     &__img {
       width: 100%;
-      left: 15vw;
-      transform: translateX(0);
-      img {
-        object-position: 5vw;
-      }
+    }
+
+    .products-fish {
+    }
+
+    .products-meat {
+      right: -39vw !important;
+    }
+
+    .products-seafood {
+      right: -33vw !important;
+    }
+
+    .products-shellfish {
+      top: -14vw;
+      right: -44vw !important;
+      height: 85vw;
+      transform: rotate(-40deg);
     }
 
     &__link {
